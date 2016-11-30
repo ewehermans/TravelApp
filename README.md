@@ -61,4 +61,4 @@ I have never worked with the combination of parse and AMS Amazon. That is going 
 **Similar applications or visualizations**
 
 One famous app for travellers is of course Trip Advisor. I have looked al lot at this application and I especially like the search function. The app asks you for a place name, restaurant, hotel etc. If your search is for example the place Tamarindo in Costa Rica, you can tab on that place. Then another table view is viewed containing the different categories regarding that place etc. etc. It is a nice and easy way to go where you want to go.
-![](documents/travelapprep/travelapp/doc/TripAdv1.png)   ![](documents/travelapprep/travelapp/doc/TripAdv2.png)
+![](doc/TripAdv1.PNG)   ![](doc/TripAdv2.PNG)
