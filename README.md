@@ -1,4 +1,4 @@
-Proposal
+#Proposal
 
 **Problem solved for the user**
 
@@ -29,7 +29,7 @@ The idea is that the user can follow other users (people). These people could be
 
 **Parts of the application**
 
-The app is going to be divided into x parts:
+The app is going to be divided into the following parts:
 
 * Login/signup screen: Login and sign up.
 * Main screen: A map view, which will be the main screen of the application. From there the users will be able to navigate to the other parts.
