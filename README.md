@@ -37,19 +37,17 @@ The idea is that the user can follow other users (people). These people could be
 
 The app is going to be divided into x parts:
 
-- Login/signup screen: Login and sign up.
-- Main screen: A map view, which will be the main screen of the application. From there the users will be able to navigate to the other parts.
-- Add recommendation screen: A screen to add a recommendation. You can reach this screen by clicking on the add button on the main screen or tabbing and holding a position on the map view (one for adding on your current location en the other for any location the user wishes).
-- Friends screen: A screen where you can see which friends you are currently following (in a table view). By clicking on one of those friends you will be directed to their profile.
-- Profile screen: Here the user can see some basic information about the profile he selected. Also he can review the recommendations given by that user.
-- Personal profile screen: Here the user can review his basic information and the recommendations that he has given.
-- Fiend friend screen: On the friend&#39;s screen, there is a find button which directs the user to a screen with a search box. Here the user can type in the name of a friend he wants to follow. If that friend has a profile the user can click on that profile (shown in a table view) en is then directed to that profile&#39;s page. Here the user can click on a follow button to start following.
-- View recommendation screen: This screen is reached in a number of ways.
-
--
-1. The first way is to click on a pin shown on the map. The screen will then show the recommendation that the pin represents.
-2. The second way is via the search field on the main screen. There you can search for a place name (like Amsterdam) en a roll down table view is shown (on top of the map) with all the recommendations in that place (added by the user his friends). If the user tabs on one of the recommendations shown in the roll down table view the View recommendation screen is shown.
-3. The third way to reach the screen is via a profile page of one of your friends. On the profile page there is a button with that friend his recommendations. Once the button is tabbed a table view is shown with al the recommendations of that friend. When the user tabs one of the table cells the View recommendation screen is shown.
+* Login/signup screen: Login and sign up.
+* Main screen: A map view, which will be the main screen of the application. From there the users will be able to navigate to the other parts.
+* Add recommendation screen: A screen to add a recommendation. You can reach this screen by clicking on the add button on the main screen or tabbing and holding a position on the map view (one for adding on your current location en the other for any location the user wishes).
+* Friends screen: A screen where you can see which friends you are currently following (in a table view). By clicking on one of those friends you will be directed to their profile.
+* Profile screen: Here the user can see some basic information about the profile he selected. Also he can review the recommendations given by that user.
+* Personal profile screen: Here the user can review his basic information and the recommendations that he has given.
+* Fiend friend screen: On the friend&#39;s screen, there is a find button which directs the user to a screen with a search box. Here the user can type in the name of a friend he wants to follow. If that friend has a profile the user can click on that profile (shown in a table view) en is then directed to that profile&#39;s page. Here the user can click on a follow button to start following.
+* View recommendation screen: This screen is reached in a number of ways.
+    1. The first way is to click on a pin shown on the map. The screen will then show the recommendation that the pin represents.
+    2. The second way is via the search field on the main screen. There you can search for a place name (like Amsterdam) en a roll down table view is shown (on top of the map) with all the recommendations in that place (added by the user his friends). If the user tabs on one of the recommendations shown in the roll down table view the View recommendation screen is shown.
+    3. The third way to reach the screen is via a profile page of one of your friends. On the profile page there is a button with that friend his recommendations. Once the button is tabbed a table view is shown with al the recommendations of that friend. When the user tabs one of the table cells the View recommendation screen is shown.
 
 **External components (APIs)**
 
