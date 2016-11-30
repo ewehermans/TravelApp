@@ -10,28 +10,22 @@ The idea is that the user can follow other users (people). These people could be
 
 **Features**
 
-- User can create an account.
-- User can follow accounts of other users.
-- User can add a recommendation connected to a location.
-
--
-1. Add on is current location.
-2. Add on any location by tabbing (holding on map).
-
-- With the recommendation the user can:
-
--
-1. Add a title.
-2. Add a description.
-3. Add a photo (or multiple).
-4. Add a category.
-5. Add a place name.
-
-- User can view a map (map initially at user&#39;s location).
-- Map has pinpoints with recommendations provided by the users that the user is following.
-- When pinpoint is tabbed, user can review the recommendation.
-- User can view list of recommendation of one specific user (who the user is following).
-- User can view a list of all recommendations connected to a certain place or category.
+* User can create an account.
+* User can follow accounts of other users.
+* User can add a recommendation connected to a location.
+    1. Add on is current location.
+    2. Add on any location by tabbing (holding on map).
+* With the recommendation the user can:
+    1. Add a title.
+    2. Add a description.
+    3. Add a photo (or multiple).
+    4. Add a category.
+    5. Add a place name.
+* User can view a map (map initially at user&#39;s location).
+* Map has pinpoints with recommendations provided by the users that the user is following.
+* When pinpoint is tabbed, user can review the recommendation.
+* User can view list of recommendation of one specific user (who the user is following).
+* User can view a list of all recommendations connected to a certain place or category.
 
 **Parts of the application**
 
@@ -51,8 +45,8 @@ The app is going to be divided into x parts:
 
 **External components (APIs)**
 
-- Parse (data storage)
-- MapKit (viewing a map and knowing the users&#39; location)
+* Parse (data storage)
+* MapKit (viewing a map and knowing the users&#39; location)
 
 **Data sets and sources**
 
