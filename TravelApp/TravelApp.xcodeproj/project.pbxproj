@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		72365C8C1DFD8DAD002A06A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72365C8B1DFD8DAD002A06A6 /* CoreLocation.framework */; };
+		72365C8E1DFED191002A06A6 /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72365C8D1DFED191002A06A6 /* AddRecommendationViewController.swift */; };
+		72365C901DFED818002A06A6 /* AddAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72365C8F1DFED818002A06A6 /* AddAnnotation.swift */; };
+		72F12F351DFEF0F500031DD3 /* AddRecParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F12F341DFEF0F500031DD3 /* AddRecParse.swift */; };
 		72FE0C2D1DFC4E8E007630FC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE0C2C1DFC4E8E007630FC /* SignInViewController.swift */; };
 		72FE0C311DFC5536007630FC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE0C301DFC5536007630FC /* MapViewController.swift */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		72365C8B1DFD8DAD002A06A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		72365C8D1DFED191002A06A6 /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
+		72365C8F1DFED818002A06A6 /* AddAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnnotation.swift; sourceTree = "<group>"; };
+		72F12F341DFEF0F500031DD3 /* AddRecParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecParse.swift; sourceTree = "<group>"; };
 		72FE0C2C1DFC4E8E007630FC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		72FE0C301DFC5536007630FC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,11 +97,14 @@
 		81BA81471A49DA1800E65899 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
+				814C3AC61B69877600E307BB /* Main.storyboard */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				72FE0C2C1DFC4E8E007630FC /* SignInViewController.swift */,
-				814C3AC61B69877600E307BB /* Main.storyboard */,
+				72365C8D1DFED191002A06A6 /* AddRecommendationViewController.swift */,
 				72FE0C301DFC5536007630FC /* MapViewController.swift */,
+				72365C8F1DFED818002A06A6 /* AddAnnotation.swift */,
+				72F12F341DFEF0F500031DD3 /* AddRecParse.swift */,
 			);
 			name = TravelApp;
 			path = ../../../../Dropbox/TravelApp/TravelApp;
@@ -196,9 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F12F351DFEF0F500031DD3 /* AddRecParse.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				72365C8E1DFED191002A06A6 /* AddRecommendationViewController.swift in Sources */,
 				72FE0C2D1DFC4E8E007630FC /* SignInViewController.swift in Sources */,
+				72365C901DFED818002A06A6 /* AddAnnotation.swift in Sources */,
 				72FE0C311DFC5536007630FC /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
