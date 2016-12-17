@@ -1,60 +1,45 @@
 //
-//  RecommendationsTableViewController.swift
+//  FindFriendsTableViewController.swift
 //  TravelApp
 //
-//  Created by Ewoud Hermans on 12/12/16.
+//  Created by Ewoud Hermans on 17/12/16.
 //  Copyright © 2016 Parse. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class RecommendationsTableViewController: UITableViewController {
-    
-    var recTitles = [String]()
-    var recPlacenames = [String]()
-    var recObjectIDs = [String]()
-    var row: Int = 0
+class FindFriendsTableViewController: UITableViewController {
 
+    var users = [String: String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        self.tableView.rowHeight = 60.0
+        let query = PFUser.query()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        let user = PFUser.current()
-        
-        let query = PFQuery(className: "Recommendations")
-        
-        query.whereKey("User", equalTo: user!)
-        
-        query.findObjectsInBackground(block: { (objects, error) in
+        query?.findObjectsInBackground(block: { (objects, error) in
             
-            for recommendation in objects! {
+            if let users = objects {
                 
-                let title = recommendation["Title"]
-                let placename = recommendation["Placename"]
-                let objectID = recommendation.objectId
+                self.users.removeAll()
                 
-                self.recPlacenames.append(placename as! String)
-                self.recTitles.append(title as! String)
-                self.recObjectIDs.append(objectID!)
-
-                self.tableView.reloadData()
-                
+                for object in users {
+                    
+                    if let user = object as? PFUser {
+                        
+                        self.users[user.objectId!] = user.username!
+                        
+                    }
+                    
+                    
+                }
                 
             }
-            print (self.recPlacenames)
-            print (self.recTitles)
-            
         })
         
+        print (users)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,46 +51,24 @@ class RecommendationsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-        return recPlacenames.count
+        return 0
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        
-        
-        cell.recTitleLabel.text = recTitles[indexPath.row]
-        cell.recPlacenameLabel.text = recPlacenames[indexPath.row]
+        // Configure the cell...
 
         return cell
     }
- 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        row = indexPath.row
-        
-        self.performSegue(withIdentifier: "showRec", sender: self)
-    }
+    */
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if (segue.identifier == "showRec") {
-            let DestViewController : ViewRecommendationViewController = segue.destination as! ViewRecommendationViewController
-            
-            DestViewController.objectID = recObjectIDs[row]
-
-        }
-    }
-
-   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

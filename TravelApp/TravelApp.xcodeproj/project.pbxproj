@@ -10,6 +10,10 @@
 		72365C8C1DFD8DAD002A06A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72365C8B1DFD8DAD002A06A6 /* CoreLocation.framework */; };
 		72365C8E1DFED191002A06A6 /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72365C8D1DFED191002A06A6 /* AddRecommendationViewController.swift */; };
 		72365C901DFED818002A06A6 /* AddAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72365C8F1DFED818002A06A6 /* AddAnnotation.swift */; };
+		7298D6B21E042AC200CB65CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298D6B11E042AC200CB65CE /* ProfileViewController.swift */; };
+		7298D6B41E053F1000CB65CE /* ViewRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298D6B31E053F1000CB65CE /* ViewRecommendationViewController.swift */; };
+		7298D6B61E054C3000CB65CE /* FindFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298D6B51E054C3000CB65CE /* FindFriendsTableViewController.swift */; };
+		72ED391E1E02FD7A007CC102 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED391D1E02FD7A007CC102 /* TableViewCell.swift */; };
 		72F12F351DFEF0F500031DD3 /* AddRecParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F12F341DFEF0F500031DD3 /* AddRecParse.swift */; };
 		72F12F371DFEFDAA00031DD3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F12F361DFEFDAA00031DD3 /* Alert.swift */; };
 		72F12F391DFF38FD00031DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F12F381DFF38FD00031DD3 /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		72365C8B1DFD8DAD002A06A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		72365C8D1DFED191002A06A6 /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
 		72365C8F1DFED818002A06A6 /* AddAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnnotation.swift; sourceTree = "<group>"; };
+		7298D6B11E042AC200CB65CE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../../../Documents/TravelAppRep/TravelApp/TravelApp/ProfileViewController.swift; sourceTree = "<group>"; };
+		7298D6B31E053F1000CB65CE /* ViewRecommendationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRecommendationViewController.swift; sourceTree = "<group>"; };
+		7298D6B51E054C3000CB65CE /* FindFriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsTableViewController.swift; path = ../../../Documents/TravelAppRep/TravelApp/TravelApp/FindFriendsTableViewController.swift; sourceTree = "<group>"; };
+		72ED391D1E02FD7A007CC102 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		72F12F341DFEF0F500031DD3 /* AddRecParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecParse.swift; sourceTree = "<group>"; };
 		72F12F361DFEFDAA00031DD3 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		72F12F381DFF38FD00031DD3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -103,8 +111,12 @@
 		81BA81471A49DA1800E65899 /* TravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				72F12F3E1DFF42A700031DD3 /* RecommendationsTableViewController.swift */,
+				7298D6B51E054C3000CB65CE /* FindFriendsTableViewController.swift */,
+				7298D6B11E042AC200CB65CE /* ProfileViewController.swift */,
 				72F12F381DFF38FD00031DD3 /* Main.storyboard */,
+				72F12F3E1DFF42A700031DD3 /* RecommendationsTableViewController.swift */,
+				7298D6B31E053F1000CB65CE /* ViewRecommendationViewController.swift */,
+				72ED391D1E02FD7A007CC102 /* TableViewCell.swift */,
 				72F12F3A1DFF420E00031DD3 /* UserProfileViewController.swift */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
@@ -220,10 +232,14 @@
 				72365C8E1DFED191002A06A6 /* AddRecommendationViewController.swift in Sources */,
 				72FE0C2D1DFC4E8E007630FC /* SignInViewController.swift in Sources */,
 				72365C901DFED818002A06A6 /* AddAnnotation.swift in Sources */,
+				7298D6B21E042AC200CB65CE /* ProfileViewController.swift in Sources */,
+				72ED391E1E02FD7A007CC102 /* TableViewCell.swift in Sources */,
 				72F12F371DFEFDAA00031DD3 /* Alert.swift in Sources */,
 				72F12F3B1DFF420E00031DD3 /* UserProfileViewController.swift in Sources */,
 				72F12F3F1DFF42A700031DD3 /* RecommendationsTableViewController.swift in Sources */,
 				72FE0C311DFC5536007630FC /* MapViewController.swift in Sources */,
+				7298D6B61E054C3000CB65CE /* FindFriendsTableViewController.swift in Sources */,
+				7298D6B41E053F1000CB65CE /* ViewRecommendationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
